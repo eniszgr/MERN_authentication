@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+HU:wght@100..400&family=Shadows+Into+Light&display=swap');
 @import "tailwindcss";
+
+
+@theme {
+  --font-playwrite: "Playwrite HU", sans-serif; 
+  --font-dancing-script: "Dancing Script", cursive;
+  --font-nunito: "Nunito", sans-serif;
+    --font-shadows-into-light: "Shadows Into Light", cursive;
+
+}
