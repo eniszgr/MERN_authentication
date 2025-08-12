@@ -8,14 +8,14 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
-
+      <div className="min-h-screen flex flex-col">
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout><HomePage /></Layout>} />
-          <Route path="/auth" element={<AuthPage />} />
+          <Route path="/auth" element={<Layout><AuthPage /></Layout>} />
         </Routes>
-
       </BrowserRouter>
+      </div>
 
     </>
   )
