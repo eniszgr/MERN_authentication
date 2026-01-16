@@ -1,18 +1,23 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 function Header() {
   return (
-    <div className=' fixed top-0 w-full z-50 cursor-pointer h-1/15 bg-indigo-100 flex justify-between px-9'>
-      <div className='flex justify-center items-center'>Auth Project</div>
-      <div className='flex gap-8 items-center'>
-        <div className='cursor-pointer'>img</div>
-        <div className='cursor-pointer'>Login</div>
+    <header className='fixed top-0 w-full z-50 bg-indigo-100 shadow-sm'>
+      <nav className='h-14 flex justify-between items-center px-9'>
+        <Link to="/">Auth Project</Link>
+        
+        <ul className='flex gap-8 items-center'>
+          <li>
+            <NavLink to="/profile">Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/auth">Login</NavLink>
+          </li>
 
-      </div>
-
-
-
-    </div>
+        </ul>
+      </nav>
+    </header>
   )
 }
 
